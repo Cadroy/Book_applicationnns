@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Prompt.Edit_books">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:src="@drawable/roundcorners_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/book_title_edt"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/roundcorner_pnk_tb"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:hint="Book Title"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/book_author_edt"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/roundcorner_pnk_tb"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:hint="Book Author"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/book_title_edt"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="@+id/book_title_edt"
+        app:layout_constraintTop_toBottomOf="@+id/book_title_edt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/book_pubdate_edt"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/roundcorner_pnk_tb"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:hint="Book Published Date:  mm/dd/yyyy"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/book_author_edt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/book_author_edt"
+        app:layout_constraintTop_toBottomOf="@+id/book_author_edt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/book_pages_edt"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/roundcorner_pnk_tb"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Book Pages"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/book_pubdate_edt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/book_pubdate_edt"
+        app:layout_constraintTop_toBottomOf="@+id/book_pubdate_edt" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/book_pageread_edt"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/roundcorner_pnk_tb"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Book Pages"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/book_pages_edt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/book_pages_edt"
+        app:layout_constraintTop_toBottomOf="@+id/book_pages_edt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/savebtn"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/roundcorner_pnk_tb"
+        android:text="Add Book"
+        app:layout_constraintEnd_toEndOf="@+id/book_pageread_edt"
+        app:layout_constraintTop_toBottomOf="@+id/book_pageread_edt" />
+
+    <TextView
+        android:id="@+id/cnledit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/savebtn"
+        app:layout_constraintEnd_toStartOf="@+id/savebtn"
+        app:layout_constraintTop_toTopOf="@+id/savebtn"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Archive"
+        android:icon="@drawable/baseline_archive"
+        android:id="@+id/book_archive"/>
+    <item
+        android:title="Book List"
+        android:icon="@drawable/baseline_library_books"
+        android:id="@+id/book_list"/>
+    <item
+        android:title="Favorite"
+        android:icon="@drawable/baseline_book_fav"
+        android:id="@+id/book_favorite"/>
+</menu>
